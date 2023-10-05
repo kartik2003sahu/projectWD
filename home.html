@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenWorld</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Phudu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+
+
+            type = "text/javascript"
+            src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+
+
+
+
+
+        </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* START OF HOME PAGE*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .containerr {
+
+            height: 350vh;
+            color: white;
+
+            background-color: black;
+
+
+
+        }
+
+        .home {
+
+            height: 100vh;
+
+            width: 100%;
+
+
+        }
+
+        .nav {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            position: absolute;
+            z-index: 1;
+
+
+        }
+
+        .logo {
+            width: 24%;
+            height: 100%;
+            text-align: center;
+            padding: 30px;
+            color: white;
+
+        }
+
+        .logocont {
+
+            font-size: 12px;
+            font-weight: lighter;
+            letter-spacing: 5px;
+
+        }
+
+        .logo img {
+            height: 220%;
+            width: 70%;
+            margin-top: -17px;
+        }
+
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 76%;
+            align-items: center;
+
+        }
+
+
+        ul {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            text-decoration: none;
+            list-style: none;
+            margin: auto;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        a:hover {
+
+            border: none;
+            color: rgb(152, 150, 150);
+
+        }
+
+        .dropdown button {
+            text-decoration: none;
+            color: white;
+            background: transparent;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: none;
+        }
+
+        .dropdown button:hover {
+            background: transparent;
+            box-shadow: none;
+
+        }
+
+        .dropdown ul {
+            text-decoration: none;
+            color: white;
+
+            background: transparent;
+            font-size: 12px;
+            box-shadow: none;
+
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dropdown ul:hover {
+            box-shadow: none;
+
+
+        }
+
+        .dropdown ul a {
+            color: white;
+
+        }
+
+
+
+
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+            background: transparent;
+        }
+
+        .dropdown>.dropdown-toggle:active {
+            pointer-events: none;
+            background: transparent;
+            box-shadow: none;
+
+
+        }
+
+
+
+        li {
+
+            color: white;
+            text-align: center;
+            font-size: large;
+            cursor: pointer;
+
+        }
+
+        .overview {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            background-color: black;
+            color: white;
+        }
+
+        .overviewContent {
+            width: 40%;
+            padding: 10px;
+            padding-top: 50px;
+
+        }
+
+        .overviewContent h1 {
+
+
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .overviewContent p {
+
+            font-size: large;
+            word-spacing: 3px;
+            text-align: justify;
+            color: grey;
+
+
+        }
+
+        .overviewContent h1 {
+
+            font-size: 50px;
+            margin-bottom: 0px;
+
+
+        }
+
+        .overviewImage {
+            width: 40%;
+
+
+
+        }
+
+        .img1 {
+
+            width: 35%;
+            margin-top: 150px;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 0;
+            right: 100px;
+            box-shadow: 0px 0px 10px rgba(208, 208, 208, 0.7);
+        }
+
+        .img2 {
+
+            position: absolute;
+            width: 20%;
+            height: 35%;
+            border-radius: 10px;
+            top: 150%;
+            box-shadow: 0px 0px 10px rgba(208, 208, 208, 0.7);
+            z-index: 0;
+
+
+        }
+
+        .eventoverview {
+
+            height: 100vh;
+            padding-top: 30px;
+
+        }
+
+
+        .cardiv {
+
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+            background-color: black;
+
+        }
+
+        .cardiv2 {
+
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+
+        }
+
+        .card {
+
+
+            height: 250px;
+            margin-top: 60px;
+            margin-left: 50px;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.8)
+        }
+
+        hr.solid {
+            border-top: 3px solid #ffffff;
+            margin: 0px 100px 0px 100px;
+        }
+
+        .videocontainer {
+
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+
+        }
+
+        video {
+
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="containerr">
+        <div class="home">
+            <div class="videocontainer">
+                <div class="nav">
+                    <div class="logo">
+                        <a href="/home.html"><img src="./Resources/logo.png" alt="renlogo"></a>
+                    </div>
+
+                    <div class="items">
+                        <ul>
+                            <li><a href="#overvieww">OVERVIEW</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                        EVENTS
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">TECHNO</a></li>
+                                        <li><a class="dropdown-item" href="#">CULTURAL</a></li>
+                                        <li><a class="dropdown-item" href="#">SPLASH</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </li>
+                            <li><a href="#eventovervieww">EVENTS</a></li>
+                            <li><a href="">STUDENT COUNCIL</a></li>
+                            <li><a href="">RENTEAM</a></li>
+                            <li><a href="./contact2.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <video autoplay loop muted playsinline>
+                    <source src="./Resources/bgvideo.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+        </div>
+
+        <div class="overview" id="overvieww">
+            <div class="overviewContent" id="overviewContent">
+                <h1>Renaissance</h1> <br> <br>
+                <p>Renaissance is a Techno/Cultural fest which provides a big platform for all students to learn a lot
+                    and become multidimensional. The present competitive world demands leaders, entrepreneurs and not
+                    simply executives and technocrats.
+                    Renaissance acts as a workshop, where students learn qualities like coordinating, organizing,
+                    pursuing, managing and celebrating which are the qualities of entrepreneurs and leaders. Renaissance
+                    is an opportunity, a privilege and an honor bestowed on every student.
+                    Renaissance is an opportunity which provides that special edge and makes every student strong and
+                    competent to face the world. It also provides a big platform for more than five hundred colleges
+                    witnessing a congregation of nearly seven thousand students and others from all over the country.
+                    Presence and participation of reputed organizations/institutions like yours in the event like this
+                    would help to have an effective and wide publicity to your organization/institution and enhance your
+                    corporate social responsibility (CSR).</p>
+
+            </div>
+            <div class="overviewImage">
+                <img src="./Resources/content1.jpg" alt="overview img" class="img1">
+                <img src="./Resources/sardar.jpg" alt="" class="img2">
+            </div>
+
+
+
+
+
+        </div>
+
+        <hr class="solid">
+        <div class="eventoverview" id="eventovervieww">
+
+            <h1
+                style="text-align: center ; font-size:65px; font-weight: lighter; font-family: 'Montserrat', sans-serif; font-size:50px; ">
+                Events</h1>
+
+            <div class="cardiv">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/sardar.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/content2.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/content2.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/content2.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardiv2">
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/content2.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/content2.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/content2.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Resources/content2.jpg" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FOOTLOOSE</h5>
+                        <p class="card-text">Renaissance Poster Revealing</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <br><br>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Angular</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">React</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Vue</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Laravel</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+
+
+</html>

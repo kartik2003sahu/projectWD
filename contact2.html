@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenWorld</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Phudu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        /* START OF HOME PAGE */
+
+        body {
+
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Acme', sans-serif;
+            background-color: black;
+            color: white;
+            height: 150vh;
+        }
+
+
+
+
+
+
+
+
+
+
+
+         .mid {
+           
+            background-color: white;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 10px;
+            
+            width: 700px;
+            color: black;
+            padding: 20px;
+            height: 725px;
+            margin-top: 70px;
+        }
+
+        .cnttext {
+
+
+            font-size: xx-large;
+            text-align: center;
+
+        }
+
+        .formname {
+
+            display: inline-block;
+            margin-top: 10%;
+            margin-left: 30px;
+
+
+        }
+
+        .formail {
+
+            display: inline-block;
+            margin-top: 5%;
+            margin-left: 30px;
+
+        }
+
+        .fornumber {
+
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .forlastname {
+
+            margin-top: 10%;
+            margin-left: 20px;
+            display: inline-block;
+
+
+        }
+
+        .forsubject {
+
+
+            margin-top: 5%;
+            margin-left: 30px;
+
+        }
+
+        #name,
+        #lastname,
+        #mail,
+        #number {
+
+
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5%;
+            width: 290px;
+            margin-left: 0px;
+
+        }
+
+        #subject {
+
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 5%;
+            width: 600px;
+            height: 150px;
+            margin-left: 0px;
+        }
+
+        label {
+
+            margin-left: 0px;
+
+        }
+
+        #submit {
+            margin-top: 5%;
+            margin-left: 43%;
+
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bolder;
+            background-color: black;
+            color: whitesmoke;
+
+        }
+
+     
+
+        .imagecont {
+
+            font-size: 15px;
+            margin-top: 45%;
+            margin-left: 10%;
+
+
+
+        } 
+
+        .nav {
+            height: 100px;
+            width: 100%;
+            display: flex;
+          
+
+        }
+
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 76%;
+            align-items: center;
+
+        }
+
+        ul {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            text-decoration: none;
+            list-style: none;
+            margin: auto;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        a:hover {
+
+            border: none;
+            color: grey;
+
+        }
+
+        li {
+
+            color: white;
+            text-align: center;
+
+            /* margin-left:50px; */
+            font-size: large;
+            cursor: pointer;
+
+        }
+
+        .logo {
+            width: 24%;
+            height: 100px;
+            text-align: center;
+            
+            color: white;
+
+        }
+        .logo img {
+            height: 100%;
+            width: 65%;
+        }
+
+        .containerr::before{
+
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background-image: url("/img.avif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 150vh;
+            width: 100%;
+            opacity: 0.5;
+        }
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <div class="containerr">
+
+        <div class="nav">
+            <div class="logo">
+                <a href="/home.html"><img src="./Resources/logo.png" alt="renlogo"></a>
+            </div>
+            <div class="items">
+                <ul>
+                    <li><a href="#overvieww">OVERVIEW</a></li>
+                    <li><a href="#eventovervieww">EVENTS</a></li>
+                    <li><a href="">STUDENT COUNCIL</a></li>
+                    <li><a href="">RENTEAM</a></li>
+                    <li><a href="./contact2.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+          
+
+        <div class="form">  
+            <div class="mid">
+                
+                <form action="/post" method="post" name="contactform">
+                    
+                    
+                    <h2 class="cnttext">Talk with Our Team</h2>
+                    
+                    <div class="formname">
+                        <label for="name">First Name:</label><br>
+                        <input type="text" name="nm" id="name" placeholder="e.g. John">
+                    </div>
+
+                    <div class="forlastname">
+                        <label for="lastname" class="namelabel">Last Name:</label><br>
+                        <input type="text" name="lnm" id="lastname" placeholder="Smith">
+                    </div>
+                    
+                    <div class="formail">
+                        <label for="mail">Email:</label><br>
+                        <input type="email" name="mail" id="mail" placeholder="name@gmail.com">
+                    </div>
+                    
+                    
+                    <div class="fornumber">
+                        <label for="number">Phone Number:</label><br>
+                        <input type="number" name="num" id="number" placeholder="+91 6747393927">
+                    </div>
+                    
+                    
+                    <div class="forsubject">
+                        <label for="subject">Write Your Message:</label><br>
+                        <input type="text" name="msg" id="subject">
+                    </div>
+                    
+                    <button id="submit" onclick="saveFile()">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>  
+            
+</body>
+
+<script>
+
+let saveFile = () => {
+            // Get the data from each element on the form.
+            const name = document.getElementById("name");
+            const lastname = document.getElementById("lastname");
+            const email = document.getElementById("mail");
+            const phone = document.getElementById("number");
+            const subject = document.getElementById("subject");
+
+            // This variable stores all the data.
+            let data = "\r name: " + name.value + " \r\n " + "lastname " + lastname.value + " \r\n " + "email: " + email.value + " \r\n " + "phone " + phone.value + " \r\n " + "subject " + subject.value;
+
+            console.log(data); //printing form data into the console
+
+            // Convert the text to BLOB.
+            const textToBLOB = new Blob([data], { type: "text/plain" });
+            var filename = new Date();
+            var month =new Date(); //months from 1-12
+            month = month.getMonth();
+
+            var day = new Date();
+            var day = day.getUTCDate();
+
+            var year = new Date();
+            var year = year.getUTCFullYear();
+
+            newdate = year + "/" + month + "/" + day;
+            const sFileName = filename; // The file to save the data.
+
+            let newLink = document.createElement("a");
+            newLink.download = new Date();
+
+           
+
+                }
+
+</script>
+        
+
+
+</html>

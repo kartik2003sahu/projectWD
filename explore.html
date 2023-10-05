@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenWorld</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Phudu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Acme', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+
+
+        h1 {
+
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Acme', sans-serif;
+            height: 50px;
+            padding: 10px;
+            margin: 0px;
+            align-items: center;
+
+
+        }
+
+        ul {
+
+            display: flex;
+            list-style: none;
+            font-weight: bold;
+            margin: 20px;
+            border: 1px solid white;
+            padding: 10px;
+            background-color: grey;
+            border-radius: 40px;
+
+        }
+
+
+        li {
+
+            color: black;
+            font-weight: bold;
+
+            margin-left: 50px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+
+        li:hover {
+
+            background-color: rgb(74, 74, 74);
+            border-radius: 10px;
+
+        }
+
+        input {
+
+            margin-left: 893px;
+            border-radius: 10px;
+            border: none;
+            padding-left: 20px;
+
+        }
+
+
+
+
+        a {
+
+            text-decoration: none;
+            color: black;
+
+
+
+        }
+
+        #mid::before {
+
+            content: "";
+            position: absolute;
+            background-image: url('/img.avif');
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            opacity: 0.4;
+            background-position: center;
+            background-repeat: no repeat;
+
+        }
+
+        .cont {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 500px;
+
+
+        }
+
+        .cont h3 {
+
+
+            font-weight: bolder;
+
+        }
+
+        #council:hover {
+
+            color:rgb(75, 129, 180);
+        }
+
+        #team:hover {
+
+            color:rgb(75, 129, 180);
+
+        }
+
+        #gallery:hover {
+
+            color:rgb(75, 129, 180);
+        }
+
+        #council {
+
+            margin-top: 40%;
+            padding-left: 40px;
+
+        }
+
+        #team {
+            margin-top: 40%;
+            padding-left: 60px;
+
+        }
+
+        #gallery {
+            margin-top: 40%;
+            padding-left: 65px;
+
+        }
+
+        .cont a {
+
+            color: white;
+
+        }
+
+        .councildiv {
+            background-color: black;
+            border: 2px solid white;
+
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-radius: 10px;
+
+
+        }
+
+        .teamdiv {
+            background-color: black;
+            border: 2px solid white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-radius: 10px;
+        }
+
+
+        .gallerydiv {
+            background-color: black;
+            border: 2px solid white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-radius:10px;
+
+        }
+
+
+
+        img {
+
+            width: 200px;
+            height: 150px;
+            opacity: 0.6;
+            border-radius: 10px;
+            
+        }
+
+       
+    </style>
+
+
+</head>
+
+
+<body>
+    <section id="mid">
+
+        <div class="containerr">
+            <header>
+
+
+                <h1>RENAISSANCE</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="/contact.html">Contact us</a></li>
+                        <li><a href="/about.html">About</a></li>
+
+                        <input type="search" placeholder="search">
+
+                    </ul>
+
+                </nav>
+            </header>
+
+            <div class="cont">
+
+
+                <div class="councildiv"> <a href="/council.html"><img src="council.png" alt="">
+                        <h3 id="council">Student Council</h3>
+                    </a>
+                </div>
+
+
+                <div class="teamdiv"><a href="#"><img src="team.jpg" alt="">
+                        <h3 id="team">Ren Team</h3>
+                    </a>
+                </div>
+                <div class="gallerydiv"><a href="#"><img src="memeories.png" alt="">
+                        <h3 id="gallery">Memories</h3>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    </div>
+</body>
+
+
+
+</html>
